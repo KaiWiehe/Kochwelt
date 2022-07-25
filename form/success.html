@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abgeschickt!</title>
+    <link rel="stylesheet" href="send_mail_style.css">
+    <link rel="stylesheet" href="../templates/header.css">
+    <link rel="stylesheet" href="../templates/footer.css">
+    <link rel="stylesheet" href="../base/stylebase.css">
+    <script src="../base/script.js"></script>
+    <!-- "Vorname und Nachname", "Nachricht", "Die Email wurde abgeschickt!" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="includeHTML()">
+    <header w3-include-html="../templates/header.html"></header>
+
+    <div class="content flex">
+        <div class="response flex">
+            <img src="img/logo_small.png" alt="cuisine_hat">
+            <h1 class="h1">E-Mail wurde abgeschickt!</h1>
+        </div>
+    </div>
+    <footer w3-include-html="../templates/footer.html"></footer>
+
+</body>
+
+</html>

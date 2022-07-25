@@ -1,0 +1,90 @@
+#headline {
+    margin-top: 40px;
+}
+
+.rezeptimg {
+    width: calc(100% - 100px);
+    margin: 0 50px;
+}
+
+.informations h3 {
+    background-color: #dbdbdb66;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 5px;
+    align-items: center;
+}
+
+h3 img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+
+/*--------------------------------------------------------------*/
+
+#rezept th {
+    font-size: 1.6rem;
+}
+
+#rezept td {
+    font-size: 1.6rem;
+}
+
+#rezept .button {
+    padding: 0px 30px;
+    height: 100%;
+    border: 1px solid green;
+    border-radius: 0 10px 10px 0;
+}
+
+#rezept .button:hover {
+    cursor: pointer;
+}
+
+#rezept input {
+    height: 100%;
+    border: 1px solid rgba(70, 70, 70, 0.61);
+    margin-left: 10px;
+    border-radius: 10px 0 0 10px;
+    font-size: 1.5rem;
+    width: 100px;
+    text-align: center;
+}
+
+#rezept table {
+    width: calc(100% - 100px);
+    border-collapse: separate;
+    border-spacing: 0 0;
+    margin-top: -10px;
+}
+
+#rezept table:first-child {
+    border-spacing: 0 20px;
+}
+
+#rezept td:last-child,
+#rezept th:last-child {
+    padding-left: 5px;
+    width: 100%;
+}
+
+#rezept td:last-child {
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#rezept td:first-child {
+    text-align: center;
+    width: 10%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#rezept td {
+    height: 70px;
+}

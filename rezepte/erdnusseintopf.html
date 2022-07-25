@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Erdnusseintopf</title>
+
+    <script src="../base/script.js"></script>
+    <script>
+        function calculate() {
+            let personenzahl = +document.getElementById('inputfield').value;
+            let calculate = personenzahl * 0.5;
+            document.getElementById('1').innerHTML = `${calculate}stk`;
+
+            let calculate2 = personenzahl * 2;
+            document.getElementById('2').innerHTML = `${calculate2}stk`;
+
+            let calculate3 = personenzahl * 2;
+            document.getElementById('3').innerHTML = `${calculate3}TL`;
+
+            let calculate4 = personenzahl;
+            document.getElementById('4').innerHTML = `${calculate4}TL`;
+
+            let calculate5 = personenzahl * 0.5;
+            document.getElementById('5').innerHTML = `${calculate5}TL`;
+
+            let calculate6 = personenzahl * 0.5;
+            document.getElementById('6').innerHTML = `${calculate6}TL`;
+
+            let calculate7 = personenzahl;
+            document.getElementById('7').innerHTML = `${calculate7}kl. Dose`;
+
+            let calculate8 = personenzahl;
+            document.getElementById('8').innerHTML = `${calculate8}Dose`;
+
+            let calculate9 = personenzahl;
+            document.getElementById('9').innerHTML = `${calculate9}stk`;
+
+            let calculate10 = personenzahl * 4;
+            document.getElementById('10').innerHTML = `${calculate10}EL`;
+
+            let calculate11 = personenzahl;
+            document.getElementById('11').innerHTML = `${calculate11}pck`;
+
+            let calculate12 = personenzahl * 250;
+            document.getElementById('12').innerHTML = `${calculate12}ml`;
+
+            let calculate13 = personenzahl;
+            document.getElementById('13').innerHTML = `${calculate13}EL`;
+
+            let calculate14 = personenzahl;
+            document.getElementById('14').innerHTML = `${calculate14}stk`;
+
+            let calculate15 = personenzahl * 50;
+            document.getElementById('15').innerHTML = `${calculate15}ml`;
+        }
+    </script>
+
+    <link rel="stylesheet" href="../base/stylebase.css">
+    <link rel="stylesheet" href="../base/rezept.css">
+    <link rel="stylesheet" href="../templates/header.css">
+    <link rel="stylesheet" href="../templates/footer.css">
+</head>
+
+<body onload="includeHTML()">
+    <header w3-include-html="../templates/header.html"></header>
+    <section id="headline">
+        <h1>Erdnusseintopf</h1>
+        <img src="../img/pexels-katerina-holmes-5907619.jpg" alt="Griechischer Bauernsalat" class="rounded-square rezeptimg">
+        <div class="informations flex">
+            <h3 class="flex"><img src="../img/icons/clock-regular.svg" alt="Clock icon">15 Min.</h3>
+            <h3 class="flex"><img src="../img/icons/brain-solid.svg" alt="Brain icon">simple</h3>
+            <h3 class="flex"><img src="../img/icons/calendar-alt-regular.svg" alt="calender icon">28.09.2020</h3>
+        </div>
+    </section>
+    <section id="rezept">
+        <table>
+            <tr>
+                <th class="flex">Zutaten für
+                    <div class="flex">
+                        <input id="inputfield" type="number" min="1" placeholder="Zahl">
+                        <a title="Portionen berechnen" class="button" onclick="calculate()">Portionen</a>
+                    </div>
+                </th>
+            </tr>
+        </table>
+        <table>
+            <tr class="bg1">
+                <td id="1">0.5stk</td>
+                <td>Weißkohl</td>
+            </tr>
+            <tr>
+                <td id="2">2stk</td>
+                <td>Möhren</td>
+            </tr>
+            <tr class="bg1">
+                <td id="3">2TL</td>
+                <td>Cayennepfeffer</td>
+            </tr>
+            <tr>
+                <td id="4">1TL</td>
+                <td>Thymian</td>
+            </tr>
+            <tr class="bg1">
+                <td id="5">0.5TL</td>
+                <td>Paprikapulver</td>
+            </tr>
+            <tr>
+                <td id="6">0.5TL</td>
+                <td>Senf</td>
+            </tr>
+            <tr class="bg1">
+                <td id="7">1 kl. Dose</td>
+                <td>Kidneybohnen</td>
+            </tr>
+            <tr>
+                <td id="8">1 Dose</td>
+                <td>Mais</td>
+            </tr>
+            <tr class="bg1">
+                <td id="9">1stk</td>
+                <td>Paprikaschote(n)</td>
+            </tr>
+            <tr>
+                <td id="10">4EL</td>
+                <td>Erdnussbutter</td>
+            </tr>
+            <tr class="bg1">
+                <td id="11">1pck.</td>
+                <td>Tomaten, passierte</td>
+            </tr>
+            <tr>
+                <td id="12">250ml</td>
+                <td>Gemüsebrühe</td>
+            </tr>
+            <tr class="bg1">
+                <td id="13">1EL</td>
+                <td>Kreuzkümmel</td>
+            </tr>
+            <tr>
+                <td id="14">1stk</td>
+                <td>Zwiebel(n)</td>
+            </tr>
+            <tr class="bg1">
+                <td id="15">50ml</td>
+                <td>Mangosaft</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Salz und Pfeffer</td>
+            </tr>
+
+        </table>
+    </section>
+    <footer w3-include-html="../templates/footer.html"></footer>
+</body>
+
+</html>

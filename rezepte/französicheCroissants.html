@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Griechischer Bauernsalat</title>
+
+    <script src="../base/script.js"></script>
+    <script>
+        function calculate() {
+            let personenzahl = +document.getElementById('inputfield').value;
+            let calculate = personenzahl * 12;
+            document.getElementById('1').innerHTML = `${calculate}g`;
+
+            let calculate2 = personenzahl * 125;
+            document.getElementById('2').innerHTML = `${calculate2}g`;
+
+            let calculate3 = personenzahl * 50;
+            document.getElementById('3').innerHTML = `${calculate3}g`;
+
+            let calculate4 = personenzahl * 500;
+            document.getElementById('4').innerHTML = `${calculate4}g`;
+
+            let calculate5 = personenzahl * 25;
+            document.getElementById('5').innerHTML = `${calculate5}g`;
+
+            let calculate6 = personenzahl * 250;
+            document.getElementById('6').innerHTML = `${calculate6}g`;
+
+            let calculate7 = personenzahl * 200;
+            document.getElementById('7').innerHTML = `${calculate7}g`;
+
+            let calculate8 = personenzahl * 40;
+            document.getElementById('8').innerHTML = `${calculate8}g`;
+        }
+    </script>
+
+    <link rel="stylesheet" href="../base/stylebase.css">
+    <link rel="stylesheet" href="../base/rezept.css">
+    <link rel="stylesheet" href="../templates/header.css">
+    <link rel="stylesheet" href="../templates/footer.css">
+</head>
+
+<body onload="includeHTML()">
+    <header w3-include-html="../templates/header.html"></header>
+    <section id="headline">
+        <h1>Französische Croissants</h1>
+        <img src="../img/croissant.jpg" alt="Griechischer Bauernsalat" class="rounded-square rezeptimg">
+        <div class="informations flex">
+            <h3 class="flex"><img src="../img/icons/clock-regular.svg" alt="Clock icon">15 Min.</h3>
+            <h3 class="flex"><img src="../img/icons/brain-solid.svg" alt="Brain icon">simple</h3>
+            <h3 class="flex"><img src="../img/icons/calendar-alt-regular.svg" alt="calender icon">28.09.2020</h3>
+        </div>
+    </section>
+    <section id="rezept">
+        <table>
+            <tr>
+                <th class="flex">Zutaten für
+                    <div class="flex">
+                        <input id="inputfield" type="number" min="1" placeholder="Zahl">
+                        <a title="Portionen berechnen" class="button" onclick="calculate()">Portionen</a>
+                    </div>
+                </th>
+            </tr>
+        </table>
+        <table>
+            <tr class="bg1">
+                <td id="1">12g</td>
+                <td>Salz</td>
+            </tr>
+            <tr>
+                <td id="2">125g</td>
+                <td>Milch</td>
+            </tr>
+            <tr class="bg1">
+                <td id="3">50g</td>
+                <td>Mehl zusätzlich(Typ 550)</td>
+            </tr>
+            <tr>
+                <td id="4">500g</td>
+                <td>Mehl (Typ 550)</td>
+            </tr>
+            <tr class="bg1">
+                <td id="5">25g</td>
+                <td>Hefe (frisch)</td>
+            </tr>
+            <tr>
+                <td id="6">250g</td>
+                <td>Butter</td>
+            </tr>
+            <tr class="bg1">
+                <td id="7">200g</td>
+                <td>Wasser</td>
+            </tr>
+            <tr>
+                <td id="8">40g</td>
+                <td>Zucker</td>
+            </tr>
+
+        </table>
+    </section>
+    <footer w3-include-html="../templates/footer.html"></footer>
+</body>
+
+</html>

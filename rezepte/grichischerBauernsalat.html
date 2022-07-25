@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Griechischer Bauernsalat</title>
+
+    <script src="../base/script.js"></script>
+    <script>
+        function calculate() {
+            let personenzahl = +document.getElementById('inputfield').value;
+            let calculate = personenzahl;
+            document.getElementById('1').innerHTML = `${calculate}stk`;
+
+            let calculate2 = personenzahl * 2;
+            document.getElementById('2').innerHTML = `${calculate2}stk`;
+
+            let calculate3 = personenzahl * 2;
+            document.getElementById('3').innerHTML = `${calculate3}stk`;
+
+            let calculate4 = personenzahl * 2;
+            document.getElementById('4').innerHTML = `${calculate4}stk`;
+
+            let calculate5 = personenzahl * 200;
+            document.getElementById('5').innerHTML = `${calculate5}g`;
+
+            let calculate6 = personenzahl;
+            document.getElementById('6').innerHTML = `${calculate6}stk`;
+
+            let calculate7 = personenzahl * 125;
+            document.getElementById('7').innerHTML = `${calculate7}ml`;
+
+            let calculate8 = personenzahl;
+            document.getElementById('8').innerHTML = `${calculate8}stk`;
+        }
+    </script>
+
+    <link rel="stylesheet" href="../base/stylebase.css">
+    <link rel="stylesheet" href="../base/rezept.css">
+    <link rel="stylesheet" href="../templates/header.css">
+    <link rel="stylesheet" href="../templates/footer.css">
+</head>
+
+<body onload="includeHTML()">
+    <header w3-include-html="../templates/header.html"></header>
+    <section id="headline">
+        <h1>Griechischer Bauernsalat</h1>
+        <img src="../img/salad.jpg" alt="Griechischer Bauernsalat" class="rounded-square rezeptimg">
+        <div class="informations flex">
+            <h3 class="flex"><img src="../img/icons/clock-regular.svg" alt="Clock icon">15 Min.</h3>
+            <h3 class="flex"><img src="../img/icons/brain-solid.svg" alt="Brain icon">simple</h3>
+            <h3 class="flex"><img src="../img/icons/calendar-alt-regular.svg" alt="calender icon">28.09.2020</h3>
+        </div>
+    </section>
+    <section id="rezept">
+        <table>
+            <tr>
+                <th class="flex">Zutaten für
+                    <div class="flex">
+                        <input id="inputfield" type="number" min="1" placeholder="Zahl">
+                        <a title="Portionen berechnen" class="button" onclick="calculate()">Portionen</a>
+                    </div>
+                </th>
+            </tr>
+        </table>
+        <table>
+            <tr class="bg1">
+                <td id="1">1stk</td>
+                <td>Salatgurke</td>
+            </tr>
+            <tr>
+                <td id="2">2stk</td>
+                <td>Paprikaschote, rot und grün</td>
+            </tr>
+            <tr class="bg1">
+                <td id="3">2stk</td>
+                <td>Tomate(n)</td>
+            </tr>
+            <tr>
+                <td id="4">2stk</td>
+                <td>Zwiebel(n)</td>
+            </tr>
+            <tr class="bg1">
+                <td id="5">200g</td>
+                <td>Schafskäse</td>
+            </tr>
+            <tr>
+                <td id="6">1stk</td>
+                <td>Glas Oliven (ca. 100g)</td>
+            </tr>
+            <tr class="bg1">
+                <td id="7">125ml</td>
+                <td>Olivenöl</td>
+            </tr>
+            <tr>
+                <td id="8">1stk</td>
+                <td>Zitronen</td>
+            </tr>
+            <tr class="bg1">
+                <td></td>
+                <td>Salz und Pfeffer</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Oregano</td>
+            </tr>
+
+        </table>
+    </section>
+    <footer w3-include-html="../templates/footer.html"></footer>
+</body>
+
+</html>
